@@ -35,6 +35,11 @@ https://pingxonline.com/app/saylove/
 	
 	// $db_name = 'wishingwall'; // 链接的数据库名字
 	
+
+
+
+
+
 	</code>
 			
       并把斜杠注释去掉
