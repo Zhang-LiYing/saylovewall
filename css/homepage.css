@@ -218,14 +218,15 @@ html body .action ul li .ui-btn:link, html body .action ul li .ui-btn:visited, h
   margin-right: 10px;
 }
 #comment-lists .comment-time{
-  float: right;
-  text-align: right;
-  text-indent: 0em;
-  padding: 0px;
-  color: #b3b3b3;
-  /*padding-right: 10px;*/
-  font-size: 12px;
-  margin-top: 10px;
+    /* float: right; */
+    display: block;
+    text-align: right;
+    text-indent: 0em;
+    padding: 0px;
+    color: #b3b3b3;
+    /* padding-right: 10px; */
+    font-size: 12px;
+    margin-top: 10px;
 }
 #comment-lists p{
   margin-top: 10px;

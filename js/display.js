@@ -310,7 +310,7 @@ function commentOutput(result) {
     $("#comment-lists-ul").text("快来抢沙发吧！");
   } else {
     $.each(result, function(index, val) {
-      $("<li>").html('<span class="comment-floor">'+(index+1)+'楼</span><span class="comment-ip">'+val[2]+'</span><span class="comment-time">'+val[0]+'</span><p>'+val[1]+'</p>').appendTo('#comment-lists-ul');
+      $("<li>").html('<span class="comment-floor">'+(index+1)+'楼</span><span class="comment-ip">'+val[2]+'</span><p>'+val[1]+'</p><span class="comment-time">'+val[0]+'</span>').appendTo('#comment-lists-ul');
     });
   }
 }
