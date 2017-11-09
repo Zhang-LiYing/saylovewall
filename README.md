@@ -16,7 +16,8 @@ https://pingxonline.com/app/saylove/
 - 猜名字
 - 性别区分
 - 邮件通知被表白者
-- 如何让网站应用支持Emoji [让应用程序支持 emoji 字符]  (http://google.com/https://www.liaoxuefeng.com/article/00145803336427519ae82a6c5b5474682c0c4ba5b47fb33000)
+- 如何让网站应用支持Emoji 
+[让应用程序支持 emoji 字符](http://google.com/https://www.liaoxuefeng.com/article/00145803336427519ae82a6c5b5474682c0c4ba5b47fb33000)
 ## 目的
 脱单神器助你早日脱单。
 
