@@ -28,23 +28,40 @@
                 break;
             case 'deletePosts':
                 # 删除某条表白
-
+                $id = $connectDBS->test_input($_POST['id']);
+                $sql = "DELETE FROM `saylove_2017_posts` WHERE `id` = $id";
+                echo mysqli_query($connectDBS->link, $sql);
                 break;
             case 'getComment':
                 # 获取某条表白的评论
 
                 break;
+            case 'deleteComment':
+                # 删除某条评论
+                $id = $connectDBS->test_input($_POST['id']);
+                $sql = "DELETE FROM `saylove_2017_commtents` WHERE `id` = $id";
+                echo mysqli_query($connectDBS->link, $sql);
+                break;
             case 'editLikes':
                 # 修改点赞数
-
+                $id = $connectDBS->test_input($_POST['id']);
+                $targetNum = $connectDBS->test_input($_POST['targetNum']);
+                $sql = "UPDATE `saylove_2017_posts` SET `love` = $targetNum WHERE `id` = $id";
+                echo mysqli_query($connectDBS->link, $sql);
                 break;
             case 'getGuessHistory':
                 # 获取某条表白的猜名字历史记录
+                $id = $connectDBS->test_input($_POST['id']);
+                $sql = "SELECT * FROM `saylove_2017_guess` WHERE `posts_id` = $id";
+                // 遍历输出结果
 
                 break;
             case 'editContent':
                 # 修改表白内容
-
+                $id = $connectDBS->test_input($_POST['id']);
+                $contents = $connectDBS->test_input($_POST['contents']);
+                $sql = "UPDATE `saylove_2017_posts` SET `contents` = '$contents' WHERE `id` = $id";
+                echo mysqli_query($connectDBS->link, $sql);
                 break;
             case 'resendEmail':
                 # 重新发送邮件

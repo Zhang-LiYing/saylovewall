@@ -30,7 +30,7 @@ CREATE TABLE `saylove_2017_blacklist` (
   `id` int(11) NOT NULL,
   `ip` text NOT NULL,
   `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -44,7 +44,7 @@ CREATE TABLE `saylove_2017_commtents` (
   `contents` varchar(140) NOT NULL,
   `ip` text NOT NULL,
   `mtime` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -59,7 +59,7 @@ CREATE TABLE `saylove_2017_guess` (
   `isRight` enum('0','1') NOT NULL DEFAULT '0',
   `ip` text NOT NULL,
   `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -72,7 +72,7 @@ CREATE TABLE `saylove_2017_like` (
   `posts_id` int(11) NOT NULL,
   `ip` text NOT NULL,
   `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -94,7 +94,7 @@ CREATE TABLE `saylove_2017_posts` (
   `love` int(11) NOT NULL DEFAULT '0',
   `ip` text NOT NULL,
   `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
